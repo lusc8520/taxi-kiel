@@ -1,6 +1,6 @@
 {
   "name": "taxi-kiel",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -25,5 +25,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   },
-  "homepage": "https://lusc8520.github.io/taxi-kiel/dist/"
+  "homepage": "https://lusc8520.github.io/taxi-kiel/dist"
 }
