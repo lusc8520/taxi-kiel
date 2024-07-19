@@ -6,16 +6,16 @@ function App() {
       <div style={rootStyle}>
         <div style={titleStyle}>Taxi Kiel</div>
 
-          <a href="mailto: examplename@web.de">
+          <a href="mailto: examplename@web.de?subject=Taxi%Anfrage&body=Hallo%Yousef,%ich brauche ein Taxi!%0A%0AUhrzeit:%0A%0AAbholort:%0A%0AZielort:%0A%0AName:">
               <div>
                   examplename@web.de
               </div>
           </a>
 
-          <a href="tel: 123">
+          <div>12345678910</div>
+          <a href="tel: 12345678910">
               <button>Click here to call</button>
           </a>
-        <div>Tel</div>
       </div>
   )
 }
