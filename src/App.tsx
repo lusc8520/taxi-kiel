@@ -17,15 +17,15 @@ function App() {
                 </div>
             </div>
 
-            <a style={callWrapperStyle} href="tel: +49 1234 1234567">
-                <button style={callButtonStyle}>{callMe}</button>
+            <div style={callWrapperStyle}>
+                <a href="tel: +49 1234 1234567" style={callButtonStyle}>{callMe}</a>
                 <div style={phoneNumberStyle}>+49 1234 1234567</div>
-            </a>
+            </div>
 
-            <a style={mailWrapperStyle} href={mailHref}>
+            <div style={mailWrapperStyle}>
                 <div style={mailStyle}>examplename@web.de</div>
-                <button style={mailButtonStyle}>{mailMe}</button>
-            </a>
+                <a href={mailHref} style={mailButtonStyle}>{mailMe}</a>
+            </div>
 
         </div>
     )
@@ -57,13 +57,13 @@ const titleWrapperStyle: Style = {
 }
 
 const taxiStyle: Style = {
-    padding: "0.3rem"
+    padding: "0.5rem"
 }
 
 const kielStyle: Style = {
     backgroundColor: "#020419",
     color: "white",
-    padding: "0.3rem"
+    padding: "0.5rem"
 }
 
 
@@ -83,18 +83,23 @@ const callButtonStyle: Style = {
     backgroundColor: "yellow",
     borderRadius: "1em",
     borderWidth: "0px",
-    minWidth: "300px"
+    width: "320px",
+    textAlign: "center",
+    textDecoration: "none",
+    color: "black"
 }
 
 const phoneNumberStyle: Style = {
     backgroundColor: "yellow",
-    padding: "0 1em",
+    padding: "0 1rem",
     borderEndStartRadius: "1em",
     borderEndEndRadius: "1em",
     fontWeight: "bold",
     fontSize: "20px",
     lineHeight: "1.25",
-    borderTop: "1px solid black"
+    borderTop: "1px solid black",
+    textAlign: "center",
+    width: "212px"
 }
 
 const mailWrapperStyle: Style = {
@@ -108,12 +113,14 @@ const mailWrapperStyle: Style = {
 const mailStyle: Style = {
     backgroundColor: "lightcyan",
     lineHeight: "1.25",
-    padding: "0 1em",
-    fontSize: "18px",
+    padding: "0 1rem",
+    fontWeight: "bold",
+    fontSize: "16px",
     borderStartStartRadius: "1em",
     borderStartEndRadius: "1em",
-    fontWeight: "bold",
-    borderBottom: "1px solid black"
+    borderBottom: "1px solid black",
+    textAlign: "center",
+    width: "212px"
 }
 
 const mailButtonStyle: Style = {
@@ -124,7 +131,10 @@ const mailButtonStyle: Style = {
     backgroundColor: "lightcyan",
     borderRadius: "1em",
     borderWidth: "0px",
-    minWidth: "300px"
+    width: "320px",
+    textAlign: "center",
+    textDecoration: "none",
+    color: "black"
 }
 
 
